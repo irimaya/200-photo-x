@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #2D8BF5;
+$gray-color: #4D4D4D;
+
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Main Styling
+html,
+body {
+  color: $gray-color;
+  font-family: $font-stack;
+  scroll-behavior: smooth;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.8rem; }
+h4 { font-size: 1.5rem; }
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
+
+a { text-decoration: none; }
+
+// Utility Classes
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.display-1 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.display-2 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.large {  font-size: 2rem; }
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.btn-dark {
+  background: $primary-color;
+  border: none;
+  color: #FFF;
+}
+
+form {
+  label {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: $gray-color;
+  }
+  .form-group {
+    margin-bottom: 16px;
+  }
+  .form-control {
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid $gray-color;
+    border-radius: 4px;
+  } //End form .form-control
+} //End form
+
+/* Mainheader */
+#mainheader {
+  height: 100vh;
+  .mainheader-title {
+    float: left;
+    width: 50%;
+    padding-top: 250px;
+    a {
+      margin-top: 50px;
+    }
+  } //End #mainheader .mainheader-title
+  .mainheader-image {
+    float: right;
+    width: 50%;
+    background: url('../img/showcase.jpg');
+    height: 100%;
+  } //End #mainheader .mainheader-image
+} //End #mainheader
+
+
+/* Join */
+#join {
+  padding: 100px 0;
+  h2 {
+    text-align: center;
+    padding-top: 70px;
+  }
+  p {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .join-form {
+    border: 1px solid $gray-color;  
+    padding: 60px;
+    width: 50%;
+    margin: 0 auto;
+    h4 {
+      padding-bottom: 40px;
+    }
+  } //End #join .join-form
+} //End #join
+
+/* Footer */
+#mainfooter {
+  text-align: center;
+  padding:30px;
+}
+
+@import 'mobile';
